@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kiếm</title>
+</head>
+
+<style>
+    body {background-color:white}
+    h1{
+     color:black;
+     font-family:'time',sans-serif;
+     text-align: center;
+}
+</style>
+
+<body>
+    <h1>Tìm kiếm thông tin</h1>
+    
+<!-- TÌm kiếm thông tin sinh viên -->
+<table>
+    <form action="{{ url_for('filter2')}}" method="get">
+
+<tr>
+    <td>Thông tin sinh viên</td>
+</tr>
+
+<tr>
+    <td>
+        <button>Xem danh sách</button>
+    </td>
+</tr>
+
+</table>
+</form>  
+<br>
+<hr>
+ <!------------------------------------------- -->
+ <!-- TÌm kiếm thong tin giảng viên -->
+<table>
+    <form action="{{ url_for('filter3')}}" method="get">
+        
+<tr>
+    <td>Thông tin giảng viên </td>
+ 
+</tr>
+
+<tr>
+    <td>
+        <button>Xem danh sách</button>
+    </td>
+</tr>
+ 
+</table>
+</form> 
+<br>
+<hr>
+<!---------------------------------->
+<!-- Tìm kiếm thông tin môn học -->
+ 
+
+<table>
+    <form action="{{ url_for('filter4')}}" method="get">
+        
+<tr>
+    <td>Thông tin các môn học</td>
+   
+</tr>
+
+<tr>
+    <td>
+        <button>Xem danh sách</button>
+    </td>
+</tr>
+ 
+</table>
+</form>
+<br>
+<hr>
+<!-- ------------- -->
+<!--Tìm kiếm thông tin sinh viên đăng ký môn -->
+<table>
+    <form action="{{ url_for('filter5')}}" method="get">
+
+<tr>
+    <td>Sinh viên đăng ký môn</td>
+
+</tr>
+
+<tr>
+    <td>
+        <button>Xem danh sách</button>
+    </td>
+</tr>
+<br>
+ 
+
+</table>
+</form>  
+</body>
+</html>

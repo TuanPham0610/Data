@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi thông tin</title>
+</head>
+<body>
+    <!--Update thông tin sinh viên-->
+<h4 style="color:red">Update thông tin sinh viên</h4>
+
+<table>
+<form action="{{ url_for('update1')}}" method="get">
+     
+    <tr>
+        <td>Họ và Tên</td>
+        <td>
+            <h2><input type="text"  name="Name"></h2>
+    
+        </td>
+    </tr> 
+    
+    <tr>
+        <td>Mã sinh viên</td>
+        <td>
+            <h2><input type="text"  name="Msv"  ></h2>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Ngày-Tháng-Năm Sinh</td>
+        <td>
+            <h2><input type="text"  name="Birth"></h2>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Lớp</td>
+        <td>
+            <h2><input type="text"  name="Class"></h2>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Số điện thoại</td>
+        <td>
+            <h2><input type="text"  name="Phone"></h2>
+        </td>
+    </tr>
+     
+    <tr>
+        <td>
+            <button>Update</button>
+        </td>
+    </tr> 
+</table>      
+</form>
+<hr>
+<!---------------------------------------- -->
+ 
+<!------------------------------------->
+<!-- Update thông tin môn học -->
+<h4 style="color:red">Update thông tin môn học</h4>
+
+<table> 
+
+    <form action="{{ url_for('update2')}}" method="get">
+<tr>
+    <td>Tên môn học</td>
+    <td>
+        <input type="text" name="NameMH"> 
+    </td>
+</tr>
+
+<tr>
+    <td>Mã môn học</td>
+    <td>
+        <input type="text" name="MaMH" > 
+    </td>
+</tr>
+
+<tr>
+    <td>Số Tín</td>
+    <td>
+        <input type="text" name="SoTin" > 
+    </td>
+</tr>
+
+<tr>
+    <td>Tên Giảng Viên</td>
+    <td>
+        <input type="text" name="GiangVien" > 
+    </td>
+</tr>
+
+<tr>
+    <td>Thời gian học</td>
+    <td>
+        <input type="text" name="Time" > 
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <button>Update</button>
+    </td>
+</tr>
+</table>
+</form>
+<hr>
+<!------------------------------------->
+<!-- Update thông tin giảng viên -->
+
+<h4 style="color:red">Update thông tin giảng viên</h4>
+
+<table> 
+<form action="{{ url_for('update3')}}" method="get">
+         
+    <tr>
+        <td>Họ và tên</td>
+        <td>
+            <input type="text" name="NameGV"> 
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td>Mã Giảng Viên</td>
+        <td>
+            <input type="text" name="MGV"> 
+        </td>
+    </tr>
+
+    <tr>
+        <td>Khoa</td>
+        <td>
+            <input type="text" name="Class"> 
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Số điện thoại </td>
+        <td>
+            <input type="text" name="Phone"> 
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Địa chỉ</td>
+        <td>
+            <input type="text" name="Address"> 
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td>
+            <button>Update</button>
+        </td>
+    </tr>
+
+</table>
+</form>
+
+<!----------------------------------->
+<!-- Update thông tin sinh viên đăng ký môn học -->
+
+<h4 style="color:red">Update thông tin sinh viên đăng ký môn</h4>
+
+<table> 
+<form action="{{ url_for('update4')}}" method="get">
+         
+    <tr>
+        <td>Họ và tên</td>
+        <td>
+            <input type="text" name="NameSV"> 
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td>Mã sinh viên</td>
+        <td>
+            <input type="text" name="Msv"> 
+        </td>
+    </tr>
+
+    <tr>
+        <td>Lớp</td>
+        <td>
+            <input type="text" name="Class"> 
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Ngày-Tháng-Năm Sinh</td>
+        <td>
+            <input type="text" name="Birth"> 
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Đăng ký môn học</td>
+        <td>
+            <input type="text" name="NameMH"> 
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td>
+            <button>Update</button>
+        </td>
+    </tr>
+
+</table>
+</form>
+
+</body>
+</html>

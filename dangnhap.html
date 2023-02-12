@@ -1,0 +1,42 @@
+<!--Đăng nhập vào web-->
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <h1>Đăng nhập</h1>
+
+<table> 
+    <form action="{{ url_for('home')}}" method="get">
+         
+    <tr>
+        <td>Tên đăng nhập :</td>
+        <td>
+            <h2><input type="text" name="NameSV" placeholder="Tài Khoản" required="NameSV"></h2>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mật khẩu :</td>
+        <td>
+             <input type="password" name="Pass" placeholder="Mật Khẩu" required > 
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button>Đăng nhập</button>
+        </td>
+    </tr> 
+
+</form> 
+
+     
+
+</table>
+</body>
+</html>

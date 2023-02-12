@@ -1,0 +1,67 @@
+<!--Web thêm thông tin giảng viên-->
+
+<!DOCTYPE html>
+<html >
+<head>
+ 
+    <title>Thông tin giảng viên</title>
+</head>
+<body>
+    <h2 style="color:red">Thông Tin Giảng Viên</h2>
+    <hr>
+
+<table>
+
+    <form action="{{ url_for('teacher2')}}" method="get">
+    
+<tr>
+    <td>Họ Tên Giảng Viên</td>
+    <td> 
+        <input type="text" name="NameGV" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Mã Giảng Viên</td>
+    <td> 
+        <input type="text" name="MGV" required>
+    </td>
+</tr>
+
+
+<tr>
+    <td>Khoa</td>
+    <td> 
+        <input type="text" name="Class" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Số điện thoại</td>
+    <td> 
+        <input type="text" name="Phone" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Địa chỉ</td>
+    <td> 
+        <input type="text" name="Address" required>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <button>Xác nhận</button>
+    </td>
+</tr>
+
+</table>             
+</form>  
+
+<a href="trangchu">
+    <button>Quay lại trang chủ</button>
+</a><br>
+
+</body>
+</html>

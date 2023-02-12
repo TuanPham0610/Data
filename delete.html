@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Xóa thông tin</title>
+</head>
+<body>
+
+<!--Xóa thông tin sinh viên-->
+<h4 style="color:red">Xóa thông tin sinh viên</h4>
+<table>
+<form action="{{ url_for('delete1')}}" method="get">
+     
+    <tr>
+        <td>Nhập mã sinh viên cần xóa : </td>
+        <td>
+            <input type="text" name="Msv" required>
+        </td>
+    </tr>
+ 
+    <tr>
+        <td>
+            <button>Xóa</button>
+        </td>
+    </tr> 
+</table>      
+</form>
+<br><hr>
+<!------------------------------------->
+
+<!--------Xóa thông tin giảng viên--------------->
+<h4 style="color:red">Xóa thông tin giảng viên</h4>
+<table>
+<form action="{{ url_for('delete2')}}" method="get">
+     
+    <tr>
+        <td>Nhập mã giảng viên cần xóa : </td>
+        <td>
+            <input type="text" name="MGV" required>
+        </td>
+    </tr>
+ 
+    <tr>
+        <td>
+            <button>Xóa</button>
+        </td>
+    </tr> 
+</table>      
+</form>
+<br><hr>
+<!---------------------------------->
+<!--Xóa thông tin môn học-->
+<h4 style="color:red">Xóa môn học</h4>
+
+<table> 
+<form action="{{ url_for('delete3')}}" method="get">
+
+    <tr>
+        <td>Nhập mã môn học cần xóa : </td>
+        <td>
+            <input type="text" name="MaMH" required>
+        </td>
+    </tr>
+ 
+    <tr>
+        <td>
+            <button>Xóa</button>
+        </td>
+    </tr>
+
+</table>  
+</form>
+<br><hr>
+<!-------------------------------------------->
+
+<!--Xóa thông tin sinh viên đăng ký môn học-->
+<h4 style="color:red">Xóa đăng ký môn học của sinh viên</h4>
+
+<table> 
+<form action="{{ url_for('delete4')}}" method="get">
+
+    <tr>
+        <td>Nhập mã sinh viên cần xóa : </td>
+        <td>
+            <input type="text" name="Msv" required>
+        </td>
+    </tr>
+
+ 
+    <tr>
+        <td>
+            <button>Xóa</button>
+        </td>
+    </tr>
+
+</table>  
+</form>
+<br><hr>
+
+</body>
+</html>

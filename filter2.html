@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin</title>
+</head>
+
+<style>
+    body {background-color:white}
+    h2{
+     color:black;
+     font-family:'time',sans-serif;
+     text-align: center;
+}
+</style>
+
+<body>
+    <h2>THÔNG TIN </h2>
+
+<!---Tìm kiếm thông tin sinh viên-->
+<ul> 
+    {% for student in Student %}
+    <li><b> Mã sinh viên : {{ student.Msv }}</b></li>
+    <li>Tên sinh viên: {{ student.Name }}</li>
+    <li>Ngày-Tháng-Năm Sinh : {{ student.Birth}}</li>
+    <li>Lớp : {{ student.Class }}</li>
+    <li>Số điện thoại : {{ student.Phone }}</li>
+    <br><hr>
+    {% endfor %}
+</ul>
+
+<!---Tìm kiếm thông tin giảng viên-->
+<ul> 
+    {% for teacher in Teacher %}
+    <li><b>Mã Giảng viên : {{ teacher.MGV }}</b></li>
+    <li>Tên Giảng viên: {{ teacher.NameGV}}</li>
+    <li>Khoa : {{ teacher.Class}}</li>
+    <li>Địa chỉ : {{ teacher.Address }}</li>
+    <li>Số điện thoại : {{ teacher.Phone }}</li>
+    <br>
+    {% endfor %}  
+</ul>
+<!-- Tìm kiếm thông tin môn học -->
+<ul> 
+    {% for subject in Subjectname %}
+    <li><b> Mã Môn Học : {{ subject.MaMH }}</b></li>
+    <li>Tên Môn Học : {{ subject.NameMH}}</li>
+    <li>Số Tín : {{ subject.SoTin}}</li>
+    <li>Giảng Viên : {{ subject.GiangVien }}</li>
+    <li>Thời gian : {{ subject.Time }}</li>
+    <br>
+    {% endfor %}  
+</ul>
+
+<!-- Tìm kiếm thông tin sinh viên đăng ký môn -->
+<ul> 
+    {% for dangkymh in Dangkymh %}
+    <li><b> Tên sinh viên : {{ dangkymh.NameSV }}</b></li>
+    <li>Mã sinh viên : {{ dangkymh.Msv}}</li>
+    <li>Lớp: {{ dangkymh.Class}}</li>
+    <li>Ngày-Tháng-Năm Sinh : {{ dangkymh.Birth }}</li>
+    <li>Tên môn đăng ký: {{ dangkymh.NameMH }}</li>
+    <br>
+    {% endfor %}  
+</ul>
+
+
+</body>
+</html>

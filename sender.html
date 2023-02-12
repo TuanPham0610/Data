@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MB BANK</title>
+    <meta charset="UTF-8">
+    <h2>Chuyển tiền</h2>
+</head>
+
+<body>
+    <form action="{{ url_for('bill')}}" method="get"> <!--Biểu mẫu này sẽ gửi đến bên bill-->
+        <table>
+
+        <tr>
+            <td><b>Name</b></td>
+            <td><input type="text" placeholder="Người nhận" name="Name" required></td> <!--required phải nhập đủ mới đc tiếp tục-->
+        </tr>
+
+         <tr>
+            <td><b>AccountNumber</b></td>
+            <td><input type="text" placeholder="Số tài khoản" name="Account number" required>
+         </tr>
+
+         <tr>
+            <td><b>NameBank</b></td>
+            <td><input type="text" placeholder="Tên ngân hàng" name="NameBank" required>
+         </tr>
+
+          <tr>
+            <td><b>Money</b></td>
+            <td><input type="text" placeholder="Số tiền muốn chuyển" name="Money" required>
+         </tr>
+
+           <tr>
+            <td><b>Password</b></td>
+            <td><input type="password" placeholder="Mật khẩu" name="Password" required>
+         </tr>
+
+        <tr>
+            <a href ='bill'>
+          <td><button style="background-color:rgb(255,0,0);color:rgb(0,0,204);border-radius:5px"> Xác nhận chuyển tiền </button></td>
+            </a>
+        </tr>
+
+        </table>
+
+</form>
+</body>
+<html>
